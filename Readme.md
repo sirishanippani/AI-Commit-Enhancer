@@ -2,7 +2,7 @@
 
 ## Overview
 
-Developers often write vague commit messages like:
+Developers often write vague commit messages like (Yes i am part of this crowd 🫣):
 
 > `fix bug`  
 > `update file`  
@@ -58,7 +58,7 @@ cd commit-message-enhancer
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Set up your OpenAI API key
+### 3️. Set up your OpenAI API key
 
 Create a .env file in the project root:
 
@@ -68,13 +68,13 @@ OPENAI_API_KEY=your-api-key-here
 
 **⚠️ Note: Never share your API keys publicly.**
 
-### 4️⃣ Run CLI version
+### 4️. Run CLI version
 
 ```bash
 python commit_enhancer.py
 ```
 
-### 5️⃣ Run Streamlit UI (optional)
+### 5️. Run Streamlit UI (optional)
 
 ```bash
 streamlit run streamlit_ui.py
@@ -82,11 +82,15 @@ streamlit run streamlit_ui.py
 
 ---
 
+## Demo Screenshot
+
+![Demo](screenshot.png)
+
 ## Future Improvements
 
-> Bulk enhancement for multiple commits
-> Git pre-commit hook integration
-> Domain-specific fine-tuning
+> `Bulk enhancement for multiple commits`
+> `Git pre-commit hook integration`
+> `Domain-specific fine-tuning`
 
 ---
 

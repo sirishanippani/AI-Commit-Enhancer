@@ -6,8 +6,9 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
+client = openai.OpenAI()
 
-st.title("AI Commit Message Enhancer 📝🤖")
+st.title("AI Commit Message Enhancer 🤖")
 
 raw_commit = st.text_area("Enter your raw commit message:")
 
@@ -22,7 +23,8 @@ if st.button("Enhance Commit"):
         
         Enhanced Commit:
         """
-        response = openai.ChatCompletion.create(
+
+        response = client.chat.completions.create(
             model="gpt-4o",
             messages=[
                 {"role": "system", "content": "You are a professional software developer."},
@@ -31,6 +33,8 @@ if st.button("Enhance Commit"):
             temperature=0.4,
             max_tokens=100
         )
-        enhanced_commit = response['choices'][0]['message']['content'].strip()
+
+        enhanced_commit = response.choices[0].message.content.strip()
+
         st.success("Enhanced Commit Message:")
         st.write(enhanced_commit)
