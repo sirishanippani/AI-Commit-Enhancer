@@ -96,4 +96,5 @@ streamlit run streamlit_ui.py
 
 Author
 Built with curiosity by Sirisha
+
 Connect on [LinkedIn](https://www.linkedin.com/in/sirisha-nippani/)
