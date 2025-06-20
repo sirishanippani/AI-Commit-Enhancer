@@ -88,8 +88,8 @@ streamlit run streamlit_ui.py
 
 ## Future Improvements
 
-> `Bulk enhancement for multiple commits`
-> `Git pre-commit hook integration`
+> `Bulk enhancement for multiple commits`  
+> `Git pre-commit hook integration`  
 > `Domain-specific fine-tuning`
 
 ---
